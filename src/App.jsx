@@ -9,7 +9,7 @@ import Home from "./Components/Home";
 import Sedan from "./Components/Sedan";
 import SUV from "./Components/SUV";
 import Supercars from "./Components/Supercars";
-
+import Login from "./Components/Login"; // Import the Login component
 
 function App() {
   return (
@@ -24,6 +24,7 @@ function App() {
           <Route path="/cars/sedan" element={<Sedan />} />
           <Route path="/cars/supercars" element={<Supercars />} />
           <Route path="/cars/suv" element={<SUV />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
       </BrowserRouter>
     </>
