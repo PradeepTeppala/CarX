@@ -29,30 +29,40 @@ function ContactUs() {
       </nav>
 
       <div className="contact-page">
-      <div className="contact-header">
-        <h1>Contact Car<span style={{ color: "#ff004f" }}>X</span></h1>
-        <p>We'd love to hear from you. Reach out with any questions or inquiries!</p>
-      </div>
-
-      <div className="contact-content">
-        <div className="contact-info">
-          <h2>Get in Touch</h2>
-          <p><FaMapMarkerAlt className="icon" /> CarX HQ, MG Road, Hyderabad, India</p>
-          <p><FaPhoneAlt className="icon" /> +91 98765 43210</p>
-          <p><FaEnvelope className="icon" /> support@carxluxury.com</p>
+        <div className="contact-header">
+          <h1>
+            Contact Car<span style={{ color: "#ff004f" }}>X</span>
+          </h1>
+          <p>
+            We'd love to hear from you. Reach out with any questions or
+            inquiries!
+          </p>
         </div>
 
-        <form className="contact-form">
-          <input type="text" placeholder="Your Name" required />
-          <input type="email" placeholder="Your Email" required />
-          <input type="text" placeholder="Subject" />
-          <textarea placeholder="Your Message" rows="6" required></textarea>
-          <button type="submit">Send Message</button>
-        </form>
-      </div>
+        <div className="contact-content">
+          <div className="contact-info">
+            <h2>Get in Touch</h2>
+            <p>
+              <FaMapMarkerAlt className="icon" /> CarX HQ, MG Road, Hyderabad,
+              India
+            </p>
+            <p>
+              <FaPhoneAlt className="icon" /> +91 98765 43210
+            </p>
+            <p>
+              <FaEnvelope className="icon" /> support@carx.com
+            </p>
+          </div>
 
-      
-    </div>
+          <form className="contact-form">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <input type="text" placeholder="Subject" />
+            <textarea placeholder="Your Message" rows="6" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
     </>
   );
 }

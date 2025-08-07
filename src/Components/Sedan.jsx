@@ -1,19 +1,21 @@
 import React from "react";
-import {SedanCarsData} from "../Data/SedanCars"; // Import the SedanCars data
+import { SedanCarsData } from "../Data/SedanCars"; 
 import { Link } from "react-router-dom";
 
 function Sedan() {
   return (
-    
     <div className="category-page">
       <div className="Back-Button">
-      <Link to="/cars">
-      <button >Go Back</button>
-      </Link>
+        <Link to="/cars">
+          <button>Go Back</button>
+        </Link>
       </div>
       <h1>Sedan Cars</h1>
-      <p>Discover our premium collection of luxury sedans tailored for comfort and elegance.</p>
-      
+      <p>
+        Discover our premium collection of luxury sedans tailored for comfort
+        and elegance.
+      </p>
+
       <div className="card-grid">
         {SedanCarsData.map((car) => (
           <div key={car.id} className="car-card">

@@ -32,23 +32,23 @@ function Cars() {
       <div className="car-categories">
         <Link to="/cars/sedan" className="car-card">
           <img src="/Assets/SedanCars/1.jpg" alt="Sedan" />
-        <h3>
-          <span style={{ color: "#ff004f" }}>Sedan</span>
-        </h3>
+          <h3>
+            <span style={{ color: "#ff004f" }}>Sedan</span>
+          </h3>
         </Link>
 
         <Link to="/cars/supercars" className="car-card">
           <img src="/Assets/SuperCars/1.jpg" alt="Supercar" />
-        <h3>
-          <span style={{ color: "#ff004f" }}>Supercar</span>
-        </h3>
+          <h3>
+            <span style={{ color: "#ff004f" }}>Supercar</span>
+          </h3>
         </Link>
 
         <Link to="/cars/suv" className="car-card">
           <img src="/Assets/SuvCars/1.jpg" alt="SUV" />
-        <h3>
-          <span style={{ color: "#ff004f" }}>SUV</span>
-        </h3>
+          <h3>
+            <span style={{ color: "#ff004f" }}>SUV</span>
+          </h3>
         </Link>
       </div>
     </div>

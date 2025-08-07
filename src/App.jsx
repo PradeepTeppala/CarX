@@ -1,6 +1,5 @@
 import React from "react";
 import "./App.css";
-import NavBar from "./Components/NavBar";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import AboutUs from "./Components/AboutUs";
 import Cars from "./Components/Cars";
@@ -9,7 +8,6 @@ import Home from "./Components/Home";
 import Sedan from "./Components/Sedan";
 import SUV from "./Components/SUV";
 import Supercars from "./Components/Supercars";
-import Login from "./Components/Login"; // Import the Login component
 
 function App() {
   return (
@@ -20,11 +18,10 @@ function App() {
           <Route path="/about" element={<AboutUs />} />
           <Route path="/cars" element={<Cars />} />
           <Route path="/contact" element={<ContactUs />} />
-                    
+
           <Route path="/cars/sedan" element={<Sedan />} />
           <Route path="/cars/supercars" element={<Supercars />} />
           <Route path="/cars/suv" element={<SUV />} />
-          <Route path="/login" element={<Login />} />
         </Routes>
       </BrowserRouter>
     </>
