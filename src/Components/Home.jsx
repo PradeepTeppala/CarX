@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { VscAccount } from "react-icons/vsc";
 
-function Home() {
+function Home({ handleLogout }) {
+  const [showLogout, setShowLogout] = useState(false);
+
   return (
     <>
       <nav className="navbar">
@@ -21,8 +24,17 @@ function Home() {
           <li>
             <Link to="/contact">Contact Us</Link>
           </li>
-          <li>
-            <Link to="/">Login / Sign up</Link>
+          <li style={{ position: "relative" }}>
+            <VscAccount
+              className="icon-style"
+              onClick={() => setShowLogout(!showLogout)}
+              style={{ cursor: "pointer" }}
+            />
+            {showLogout && (
+              <div className="logout-dropdown" onClick={handleLogout}>
+                Logout
+              </div>
+            )}
           </li>
         </ul>
       </nav>

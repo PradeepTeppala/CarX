@@ -1,5 +1,5 @@
 import React from "react";
-import { SedanCarsData } from "../Data/SedanCars"; 
+import { SedanCarsData } from "../Data/SedanCars";
 import { Link } from "react-router-dom";
 
 function Sedan() {

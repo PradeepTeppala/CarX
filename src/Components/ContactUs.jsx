@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+import { VscAccount } from "react-icons/vsc";
 
 function ContactUs() {
   return (
@@ -23,7 +24,7 @@ function ContactUs() {
             <Link to="/contact">Contact Us</Link>
           </li>
           <li>
-            <Link to="/">Login / Sign up</Link>
+            <Link to="/"><VscAccount className="icon-style"/></Link>
           </li>
         </ul>
       </nav>

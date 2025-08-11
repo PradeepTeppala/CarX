@@ -1,5 +1,5 @@
 import React from "react";
-import { SuperCarsData } from "../Data/SuperCars"; 
+import { SuperCarsData } from "../Data/SuperCars";
 import { Link } from "react-router-dom";
 
 function Supercars() {

@@ -1,4 +1,5 @@
 import React from "react";
+import { VscAccount } from "react-icons/vsc";
 import { Link } from "react-router-dom";
 
 function Cars() {
@@ -22,7 +23,9 @@ function Cars() {
             <Link to="/contact">Contact Us</Link>
           </li>
           <li>
-            <Link to="/">Login / Sign up</Link>
+            <Link to="/">
+              <VscAccount className="icon-style" />
+            </Link>
           </li>
         </ul>
       </nav>
