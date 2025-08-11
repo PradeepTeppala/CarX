@@ -24,7 +24,9 @@ function ContactUs() {
             <Link to="/contact">Contact Us</Link>
           </li>
           <li>
-            <Link to="/"><VscAccount className="icon-style"/></Link>
+            <Link to="/">
+              <VscAccount className="icon-style" />
+            </Link>
           </li>
         </ul>
       </nav>

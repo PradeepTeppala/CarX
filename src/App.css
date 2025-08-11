@@ -54,6 +54,7 @@ body {
   padding: 10px;
   background-color: #ff004f;
   color: black;
+  font-weight: bold;
   margin-top: 10px;
   border: none;
   border-radius: 5px;
@@ -70,7 +71,6 @@ body {
 
 .home-container button a {
   color: black;
-  /* font-weight: bold; */
   text-decoration: none;
 }
 .icon-style {
@@ -162,6 +162,7 @@ body {
   height: 200px;
   object-fit: cover;
 }
+/*------------------------------------------ Sedan, Super, SUV Cars Page ----------------------------------------------------*/
 
 .category-page {
   padding: 40px;
@@ -180,7 +181,6 @@ body {
   color: #555;
 }
 
-/*------------------------------------------ Sedan, Super, SUV Cars Page ----------------------------------------------------*/
 .category-page {
   padding: 2rem;
   text-align: center;
@@ -319,7 +319,7 @@ body {
 }
 
 .contact-form button {
-  background-color: #007bff;
+  background-color: #ff004f;
   color: white;
   border: none;
   padding: 12px;
@@ -329,7 +329,7 @@ body {
 }
 
 .contact-form button:hover {
-  background-color: #0056b3;
+  background-color: #920532;
 }
 
 .map-container {
@@ -345,8 +345,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("/Assets/HomePage/luxury-car-bg.jpg") no-repeat center
-    center/cover;
+  background: url('/Assets/HomePage/luxury-car-bg.jpg') no-repeat center center/cover;
   padding: 20px;
 }
 
@@ -412,21 +411,15 @@ body {
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 .logout-dropdown {
   position: absolute;
-  top: 40px;
+  top: 40px; 
   right: 0;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.08); 
   backdrop-filter: blur(12px);
   border-radius: 8px;
   padding: 10px 20px;
@@ -448,12 +441,6 @@ body {
 }
 
 @keyframes dropdownFade {
-  from {
-    opacity: 0;
-    transform: translateY(-8px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: translateY(0); }
 }

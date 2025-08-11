@@ -44,11 +44,10 @@ function Home({ handleLogout }) {
           Car<span style={{ color: "#ff004f" }}>X</span>
         </h1>
         <p>Your one-stop destination for all things cars!</p>
-        <button>
-          <Link to="/cars" className="btn">
-            Explore More
-          </Link>
-        </button>
+
+        <Link to="/cars" className="btn">
+          <button>Explore More</button>
+        </Link>
       </div>
     </>
   );
