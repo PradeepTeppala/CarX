@@ -482,13 +482,13 @@ body {
     margin-top: 8px;
   }
   .navbar ul li {
-    font-size: 14px;
+    font-size: 12px;
   }
   .icon-style {
     font-size: 18px;
   }
   .home-container {
-    margin-top: 500px;
+    margin-top: 350px;
     margin-left: 20px;
     padding: 0 10px;
   }
@@ -509,44 +509,45 @@ body {
     background-image: url("/public/Assets/Mobile-Background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-  }
-  .about-container {
-    background-size: cover;
+    height: 100vh;
     background-position: center;
-    padding: 20px 10px;
   }
-
+ 
   .about-section {
-    margin-top: 20px;
+    margin-top: 10px;
     padding: 0 10px;
     text-align: center;
   }
 
   .about-section h2 {
-    font-size: 1.6rem;
-    margin-bottom: 15px;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    margin-top: 5px;
   }
 
   .about-section p {
-    font-size: 14px;
-    line-height: 1.4;
-    margin-bottom: 20px;
+    font-size: 12px;
+    margin-bottom: 10px;
   }
 
   .about-features {
     flex-direction: column;
     gap: 15px;
-    margin-top: 40px;
+    margin-top: 15px;
     padding: 0;
   }
 
   .feature h3 {
-    font-size: 15px;
+    font-size: 10px;
     margin-top: 5px;
   }
 
   .feature p {
     font-size: 13px;
+  }
+  .feature icon {
+    font-size: 16px;
+    margin-right: 5px;
   }
 
   /* ------------------------------------------------------------ Cars Page -------------------------------------------------------------------- */
@@ -554,14 +555,11 @@ body {
     background-image: url("/public/Assets/Mobile-Background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-  }
-
-  .car-container {
-    padding: 10px;
+    background-position: center;
   }
 
   .car-container h2 {
-    font-size: 1.4rem;
+    font-size: 1rem;
     margin-top: 15px;
   }
 
@@ -593,22 +591,17 @@ body {
     margin-top: 10px;
   }
   .car-card img {
-    height: 160px;
+    height: 100px;
   }
-
-  .category-page {
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    padding: 15px;
+  .car-categories{
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 20px;
+    padding-bottom: 50px ;
+    
   }
-  .category-page h1 {
-    font-size: 1.6rem;
-  }
-  .category-page p {
-    font-size: 14px;
-    margin-top: 10px;
-  }
+  
   /* ------------------------------------------------ Sedan, SUV, Supercars Pages  ------------------------------------------------------------ */
 
   .category-page {
@@ -667,14 +660,14 @@ body {
     background-repeat: no-repeat;
   }
   .contact-container {
-    padding: 15px;
+    padding: 10px;
   }
   .contact-header {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   .contact-header h1 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin-bottom: 10px;
   }
   .contact-header p {
@@ -691,11 +684,11 @@ body {
     max-width: 100%;
   }
   .contact-info h2 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 10px;
   }
   .contact-info p {
-    font-size: 14px;
+    font-size: 12px;
     margin: 5px 0;
   }
   .contact-info .icon {
@@ -704,14 +697,14 @@ body {
   }
   .contact-form {
     width: 100%;
-    max-width: 400px;
+    max-width: 350px;
   }
   .contact-form input,
   .contact-form textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-    font-size: 14px;
+    font-size: 10px;
   }
   .contact-form button {
     padding: 10px;
