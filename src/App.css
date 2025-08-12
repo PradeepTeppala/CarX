@@ -345,7 +345,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url('/Assets/HomePage/luxury-car-bg.jpg') no-repeat center center/cover;
+  background: url("/Assets/HomePage/luxury-car-bg.jpg") no-repeat center
+    center/cover;
   padding: 20px;
 }
 
@@ -411,15 +412,21 @@ body {
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .logout-dropdown {
   position: absolute;
-  top: 40px; 
+  top: 40px;
   right: 0;
-  background: rgba(255, 255, 255, 0.08); 
+  background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(12px);
   border-radius: 8px;
   padding: 10px 20px;
@@ -441,6 +448,273 @@ body {
 }
 
 @keyframes dropdownFade {
-  from { opacity: 0; transform: translateY(-8px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================================================= RESPONSIVE DESIGN FOR MOBILE'S ============================================================== */
+
+/* ------------------------------------------------- Mobile phones only (≤ 480px) -------------------------------------------------------------- */
+@media screen and (max-width: 480px) {
+  body {
+    background-image: url("/public/Assets/Mobile-Background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar img {
+    width: 65px;
+  }
+  .navbar ul {
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-top: 8px;
+  }
+  .navbar ul li {
+    font-size: 14px;
+  }
+  .icon-style {
+    font-size: 18px;
+  }
+  .home-container {
+    margin-top: 500px;
+    margin-left: 20px;
+    padding: 0 10px;
+  }
+  .home-container h1 {
+    font-size: 2.5rem;
+  }
+  .home-container button {
+    padding: 8px;
+    font-size: 10px;
+  }
+  .home-container button:hover {
+    color: white;
+    border: 1px solid white;
+  }
+
+  /* ------------------------------------------------------ About Us Page ------------------------------------------------------------------------ */
+  .about-container {
+    background-image: url("/public/Assets/Mobile-Background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .about-container {
+    background-size: cover;
+    background-position: center;
+    padding: 20px 10px;
+  }
+
+  .about-section {
+    margin-top: 20px;
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  .about-section h2 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+  }
+
+  .about-section p {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+
+  .about-features {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 40px;
+    padding: 0;
+  }
+
+  .feature h3 {
+    font-size: 15px;
+    margin-top: 5px;
+  }
+
+  .feature p {
+    font-size: 13px;
+  }
+
+  /* ------------------------------------------------------------ Cars Page -------------------------------------------------------------------- */
+  .car-container {
+    background-image: url("/public/Assets/Mobile-Background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .car-container {
+    padding: 10px;
+  }
+
+  .car-container h2 {
+    font-size: 1.4rem;
+    margin-top: 15px;
+  }
+
+  .car-categories {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin: 15px 0;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .car-categories::-webkit-scrollbar {
+    display: none;
+  }
+
+  .car-categories h3 {
+    padding: 8px 12px;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  .car-card {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .car-card img {
+    height: 160px;
+  }
+
+  .category-page {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 15px;
+  }
+  .category-page h1 {
+    font-size: 1.6rem;
+  }
+  .category-page p {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  /* ------------------------------------------------ Sedan, SUV, Supercars Pages  ------------------------------------------------------------ */
+
+  .category-page {
+    background-image: url("/public/Assets/Mobile-Background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+  }
+
+  .category-page h1 {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .category-page p {
+    font-size: 12px;
+    line-height: 1.4;
+    text-align: center;
+  }
+
+  .car-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+  .car-card {
+    width: 100%;
+  }
+  .car-card img {
+    height: auto;
+    object-fit: cover;
+  }
+
+  .Back-Button {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+  }
+  .Back-Button button {
+    padding: 5px 10px;
+    background-color: #ff004f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 10px;
+    transition: background-color 0.3s ease;
+  }
+
+  /* ---------------------------------------------------- Contact Page ---------------------------------------------------------------------------- */
+
+  .contact-page {
+    background-image: url("/public/Assets/Mobile-Background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .contact-container {
+    padding: 15px;
+  }
+  .contact-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .contact-header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  .contact-header p {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  .contact-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .contact-info {
+    text-align: center;
+    max-width: 100%;
+  }
+  .contact-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  .contact-info p {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  .contact-info .icon {
+    font-size: 18px;
+    margin-right: 5px;
+  }
+  .contact-form {
+    width: 100%;
+    max-width: 400px;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  .contact-form button {
+    padding: 10px;
+    font-size: 14px;
+  }
 }
