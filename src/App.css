@@ -658,6 +658,7 @@ body {
     background-image: url("/public/Assets/Mobile-Background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
   }
   .contact-container {
     padding: 10px;

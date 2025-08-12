@@ -21,13 +21,13 @@ function AboutUs() {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/about">About Us</Link>
+            <Link to="/about">AboutUs</Link>
           </li>
           <li>
             <Link to="/cars">Cars</Link>
           </li>
           <li>
-            <Link to="/contact">Contact Us</Link>
+            <Link to="/contact">ContactUs</Link>
           </li>
           <li>
             <Link to="/">
